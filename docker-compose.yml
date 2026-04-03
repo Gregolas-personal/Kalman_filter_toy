@@ -1,0 +1,32 @@
+services:
+  zmm-delphes:
+    build:
+      context: ./zmm-delphes
+    container_name: zmm-delphes-lite
+    working_dir: /workspace
+    volumes:
+      - ./zmm-delphes:/workspace
+      - ./outputs:/outputs
+    command: ["/bin/bash", "/workspace/run_zmm.sh"]
+
+  kalman-python:
+    build:
+      context: ./kalman-python
+    container_name: kalman-python-lite
+    working_dir: /workspace
+    volumes:
+      - ./kalman-python:/workspace
+      - ./outputs:/outputs
+    ports:
+      - "8888:8888"
+    command:
+      [
+        "jupyter",
+        "lab",
+        "--ip=0.0.0.0",
+        "--port=8888",
+        "--no-browser",
+        "--allow-root",
+        "--ServerApp.token=",
+        "--ServerApp.password="
+      ]

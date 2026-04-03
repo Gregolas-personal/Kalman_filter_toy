@@ -1,0 +1,22 @@
+Main:numberOfEvents = 10000
+
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13000.
+
+WeakSingleBoson:ffbar2gmZ = on
+
+23:onMode = off
+23:onIfAny = 13
+
+PhaseSpace:mHatMin = 60.
+PhaseSpace:mHatMax = 120.
+
+Random:setSeed = on
+Random:seed = 12345
+
+Init:showChangedSettings = on
+Init:showChangedParticleData = on
+Next:numberShowInfo = 1
+Next:numberShowProcess = 1
+Next:numberShowEvent = 1
