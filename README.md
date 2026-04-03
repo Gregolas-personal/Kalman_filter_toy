@@ -2,7 +2,7 @@
 
 This notebook demonstrates a simplified track reconstruction workflow inspired by high-energy physics experiments such as the ATLAS Collaboration at CERN.
 
-Using simulated events generated with Delphes, we select truth-level muons from \(Z \to \mu^+\mu^-\) decays and construct synthetic detector measurements. These measurements are then used to reconstruct the muon trajectory with a Kalman filter.
+Using simulated events generated with Delphes, we select truth-level muons from $\(Z \to \mu^+\mu^-\)$ decays and construct synthetic detector measurements. These measurements are then used to reconstruct the muon trajectory with a Kalman filter.
 
 The goal is to illustrate how sequential state estimation can recover the underlying particle trajectory from noisy detector data.
 
