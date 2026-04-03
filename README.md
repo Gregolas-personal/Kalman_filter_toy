@@ -111,7 +111,6 @@ If you want both services available, launch them as separate commands. They are 
 After running the services, you should find:
 
 - `outputs/zmm_delphes.root`
-- `outputs/kalman_test.png`
 
 Create the directory manually if you want to inspect it ahead of time:
 
@@ -133,7 +132,7 @@ Edit [`zmm-delphes/zmm.cmnd`](/zmm-delphes/zmm.cmnd) to change:
 
 ### Change the Kalman filter example
 
-Edit [`kalman-python/test_kalman.ipynb`](/kalman-python/test_kalman.ipynb) to modify:
+Edit [`kalman-python/kalman_filter.ipynb`](/kalman-python/kalman_filter.ipynb) to modify:
 
 - the simulated trajectory,
 - the measurement noise,
